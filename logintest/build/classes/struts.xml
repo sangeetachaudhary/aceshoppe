@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+ <struts>
+    	<constant name="struts.devMode" value="true" />
+
+		<package name="Registration" extends="struts-default">
+		
+		<action name="save" class="com.login">
+			<result name="success">/login.jsp</result>
+			<result name="error">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		
+		
+		
+		<action name="signup" class="com.signup">
+			<result name="success">/signup.jsp</result>
+			<result name="error">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="reg" class="com.Reg">
+			<result name="success">/index.jsp</result>
+			<result name="error">/signup.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="forgetpassword" class="com.forgetpassword">
+			<result name="success">/forgotpassword.jsp</result>
+			<result name="error">/index.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="mail" class="com.mail">
+			<result name="success">/index.jsp</result>
+			<result name="error">/forgotpassword.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+	
+		
+		</package>
+    	
+  </struts>
